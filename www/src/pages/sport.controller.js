@@ -1,24 +1,24 @@
 "use strict";
 
-angular.module('starter').controller("FeedController", function($http, $scope,$q) {
+angular.module('starter').controller("FeedControllerSport", function($http, $scope,$q) {
  
 //list = ["http://www.frenchweb.fr/feed/","http://feeds.feedburner.com/Maddyness","http://www.emarketinglicious.fr/feed"]
 
     var list = [
             {
-                name:'Frenchweb',
-                url: "http://www.frenchweb.fr/feed/",
+                name:'Foot Mercato',
+                url: "http://www.footmercato.net/flux-rss",
                 entries:[]
             },
             {
-                name:'Maddyness',
-                url: "http://feeds.feedburner.com/Maddyness",
+                name:'Léquipe',
+                url: "http://www.lequipe.fr/rss/actu_rss_Football.xml",
                 entries:[]
 
             },
             {
-                name:'Emarketinglicious',
-                url: "http://www.emarketinglicious.fr/feed",
+                name:'Maxifoot',
+                url: "http://rss.maxifoot.com/football-general.xml",
                 entries:[]
             },
             ];

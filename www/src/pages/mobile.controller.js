@@ -1,24 +1,24 @@
 "use strict";
 
-angular.module('starter').controller("FeedController", function($http, $scope,$q) {
+angular.module('starter').controller("FeedControllerMobile", function($http, $scope,$q) {
  
 //list = ["http://www.frenchweb.fr/feed/","http://feeds.feedburner.com/Maddyness","http://www.emarketinglicious.fr/feed"]
 
     var list = [
             {
-                name:'Frenchweb',
-                url: "http://www.frenchweb.fr/feed/",
+                name:'Service Mobile',
+                url: "http://www.servicesmobiles.fr/feed/",
                 entries:[]
             },
             {
-                name:'Maddyness',
-                url: "http://feeds.feedburner.com/Maddyness",
+                name:'AppDays',
+                url: "http://appdays.fr/news/feed",
                 entries:[]
 
             },
             {
-                name:'Emarketinglicious',
-                url: "http://www.emarketinglicious.fr/feed",
+                name:'Viuz',
+                url: "http://www.viuz.com/category/mobile/feed/",
                 entries:[]
             },
             ];
