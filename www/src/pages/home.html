@@ -4,8 +4,8 @@
             </ion-header-bar>
             <ion-content ng-controller="FeedController" ng-init="init()">
                     <div class="item" item-thumbnail-left ng-repeat="(key, value) in entries">
-                        <h3>{{value.name}}</h>
-                                <a ng-repeat="entry in value" class="item" ng-click="browse(entry.link)">
+                        <h2 class="item item-divider">{{value.name }}</h2>
+                                <a ng-repeat="entry in value.data.entries" class="item item-thumbnail-left" ng-click="browse(entry.link)">
                         <span ng-bind-html="entry.contentSnippet"></span>
                     </a>
                 </div>

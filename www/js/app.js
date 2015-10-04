@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-var rssApp = angular.module('starter', ['ionic']);
+var rssApp = angular.module('starter', ['ionic',"firebase"]);
 
 rssApp.run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -24,7 +24,6 @@ rssApp.run(function($ionicPlatform) {
       templateUrl: 'src/nav/menu/menu.html',
       controller:'MenuCtrl'
     });
-
 
       $urlRouterProvider.otherwise('/app');
 
